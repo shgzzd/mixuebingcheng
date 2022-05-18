@@ -1,0 +1,110 @@
+/* pages/mine/index.wxss */
+.page {
+  background: linear-gradient(to bottom, #fbe7e6, #f8f8f8); 
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  padding-top: 170rpx;
+}
+.list-items {
+  margin-bottom: 26rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+}
+.list-items.app-download {
+  border-radius: 10rpx;
+}
+.list-items.app-download .tips {
+  margin-right: 10rpx;
+  font-size: 24rpx;
+  /* color: $gray-text-color; */
+}
+.list-items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36rpx 30rpx; 
+}
+.list-items .item .left-arrow {
+  font-size: 20rpx;
+  display: flex;
+  }
+.list-items .item .content {
+  display: flex;
+  align-items: center;
+}
+.list-items .item .content .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 25rpx;
+}
+.list-items .item .content .label {
+  font-size: 26rpx;  
+  }
+.page .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26rpx;
+}
+.page .card-container .card {
+  width: 330rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  padding: 23rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .card-container .card .icon {
+  width: 72rpx;
+  height: 72rpx;
+}
+.page .card-container .card .meta .count {
+    font-size: 24rpx;
+    font-weight: bold;
+}
+.page .card-container .card .meta .name {
+  font-size: 17rpx;
+  /* color: $gray-text-color; */
+}
+.page .user-area { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26rpx;
+}
+.page .user-area .user-box {
+  display: flex;
+  align-items: center;
+}
+.page .user-area .user-box .avatar {
+  width: 120rpx;
+  height: 120rpx;
+}
+.page .user-area .user-box  .name {
+  font-size: 28rpx;
+  margin-left: 24rpx;
+}
+.page .user-area .login-btn {
+  width: 150rpx;
+  height: 62rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+  /* &:active {
+    opacity: 0.6;
+  } */
+  background-color: #d2252c;
+}
+.page .user-area .login-btn.active {
+  opacity: 0.6;
+}

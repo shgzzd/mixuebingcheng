@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "progress-bar": "../../components/progress-bar"
+  },
+  "backgroundColor": "#f6f6f6"
+}  

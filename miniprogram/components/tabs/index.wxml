@@ -1,0 +1,5 @@
+<view class="tabs">
+  <view class="tab active">附近门店</view>
+  <view class="tab">常去门店</view>
+  <view class="line"></view>
+</view>

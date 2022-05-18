@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tabs":"../../components/tabs"
+  },
+  "navigationBarTitleText": "门店列表"
+}

@@ -1,0 +1,44 @@
+<view class="page">
+  <!-- 轮播图 -->
+  <view wx:if="{{swiperList.length}}" class="swiper-container">
+    <swiper bindchange="onSwiperChange">
+      <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image bindtap="onSwiperTab" data-item="{{item}}" mode="aspectFill" src="{{item.imageUri}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="dots">
+      <view class="dot {{cuttent !== index || 'active'}}" wx:for="{{swiperList}}" wx:key="index"></view>
+    </view>
+  </view>
+  <!-- 会员、积分 -->
+  <view class="member-area">
+    <view class="vip-box">
+      <image src="../../assets/images/vip-pic.png"></image>
+      <view class="meta">
+        <view class="title">{{isLogin ? '微雪花会员' : '尊敬的用户'}}</view>
+        <!-- <view class="progress-bar"></view> -->
+        <progress-bar value="{{45}}"></progress-bar>
+        <view class="tips">{{isLogin ? '再升一级可享【升级礼包】等6项权益' : '会员可享【限时优惠】等多项权益'}}</view>
+      </view>
+    </view>
+    <view wx:if="{{isLogin}}" class="coin-box">
+      <image src="../../assets/images/coin.png"></image>
+      <view class="currency">51</view>
+    </view>
+    <view wx:if="{{!isLogin}}" class="login-btn" bindtap = "gotoLogin">授权登录</view>
+  </view>
+  <!-- 点餐banner -->
+  <view class="menu-banner">
+    <view class="location">
+      <image src="../../assets/images/menu.png"></image>
+      <view class="name">蜜雪冰城（财经学院店）</view>
+    </view>
+    <image class="menu-card" bindtap="onMenuCardClick" src="../../assets/images/menu-banner.jpg"></image>
+  </view>
+  <!-- 三个卡片 -->
+  <view class="banner-list">
+  	<image class="banner" src="../../assets/images/banner-1.jpg" bindtap="onArticleClick"></image>
+    <image class="banner" src="../../assets/images/banner-2.jpg"></image>
+    <image class="banner" src="../../assets/images/banner-3.jpg"></image>
+  </view>
+</view>

@@ -1,0 +1,161 @@
+/* 轮播图 */
+.swiper-container {
+  width: 100vw;
+  height: 646rpx;
+  position: relative;
+}
+
+.swiper-container swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container swiper image {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+/* dots */
+.swiper-container .dots {
+  position: absolute;
+  left: 50rpx;
+  bottom: 58rpx;
+  display: inline-flex;
+}
+
+.swiper-container .dots .dot {
+  width: 10rpx;
+  height: 10rpx;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 5rpx;
+  margin-left: 5rpx;
+  transition: all 1s;
+}
+
+.swiper-container .dots .dot.active {
+  width: 29rpx;
+  opacity: 1;
+}
+
+/* 会员、积分 */
+.member-area {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  margin-top: -40rpx;
+  overflow: hidden;
+  width: 688rpx;
+  height: 174rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 44rpx;
+}
+
+.member-area .vip-box {
+  display: flex;
+}
+
+.member-area .vip-box image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  margin-right: 26rpx;
+  flex-shrink: 0;
+}
+
+.member-area .vip-box .meta .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 18rpx;
+}
+
+.member-area .vip-box .meta .tips {
+  color: #777;
+  font-size: 24rpx;
+  margin-top: 14rpx;
+}
+
+.member-area .coin-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-area .coin-box image {
+  width: 118rpx;
+  height: 70rpx;
+}
+
+.member-area .coin-box .currency {
+  color: #d00f52;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  font-weight: bold;
+}
+
+.member-area .login-btn {
+  width: 150rpx;
+  height: 65rpx;
+  border-radius: 10rpx;
+  background-color: #d2252c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+
+/* 点餐 */
+.menu-banner {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 36rpx;
+}
+
+.menu-banner .location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+
+.menu-banner .location image {
+  width: 18rpx;
+  height: 24rpx;
+}
+
+.menu-banner .location .name {
+  font-size: 22rpx;
+  margin-left: 14rpx;
+}
+
+.menu-banner .menu-card {
+  width: 688rpx;
+  height: 340rpx;
+  box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20rpx;
+}
+
+/* 三个卡片 */
+.banner-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.banner-list .banner {
+  width: 216rpx;
+  height: 160rpx;
+  box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20rpx;
+}
