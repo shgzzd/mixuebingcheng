@@ -1,12 +1,55 @@
 <view class="page">
+<!-- <van-tabs class="tabs" active="{{ active }}">
+  <van-tab title="附近门店"></van-tab>
+  <van-tab title="常去门店"></van-tab>
+</van-tabs> -->
+  <!-- 顶部标签栏 -->
   <view class="header">
     <tabs></tabs>
-    <input type="text"/>
   </view>
-  <view class="map">
-    
-  </view>
-  <view class="collapse-area"></view>
-  <scroll-view class="score-list">
+  <!-- 地图 -->
+  <map id="store-map" class="store-map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" 
+  bindmarkertap="markertap" polyline="{{polyline}}" circles="{{circles}}" bindregionchange="regionchange" show-location style="width:100%;height:350px;">
+  </map>
+  <view class="collapse-area">收起地图</view>
+  <!-- 门店 -->
+  <scroll-view class="store-list" style="height: calc(100vh - {{ collapse ? 180 : 700}}rpx);" scroll-y>
+    <view wx:for="{{ storeList }}" wx:key="index" bindtap="popupProductDetail" data-store="{{item}}" wx:key="index" class="store-box" bindtap="popupStoreDetail" data-store="{{ item }}">
+      <view class="info-area">
+        <view class="name">{{ item.name }}</view>
+        <view class="info">{{ item.address }}</view>
+        <view class="info">营业时间: {{ item.opening_time }}</view>
+        <view class="tag">营业中</view>
+      </view>
+
+      <view class="location-area">
+        <view class="distance">距离{{ item.distance }}km</view>
+        <view class="action-area">
+          <!-- 位置图标 -->
+          <image class="location" bindtap="navigateLocation" data-location="{{ item.location }}" src="../../assets/images/location.jpg"></image>
+          <!-- 电话图标 -->
+          <image class="phone" bindtap="call" data-phone="{{ item.phone }}" src="../../assets/images/phone.jpg"></image>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{ !storeList.length }}" class="empty">抱歉附近暂时没有店</view>
   </scroll-view>
+  <!-- 弹窗组件 -->
+  <page-container show="{{storeDetailShow}}" round position = "bottom" class="store-detail">
+    <van-notice-bar color="#e92628" background="#fdeef1" left-icon="volume-o" text="我们的店很多，千万不要选错哦~"/>
+    <view class="container">
+      <view class="header-area">
+        <view class="info">
+          <view class="title">蜜雪冰城（财经学院店）</view>
+          <view class="address">浙江省宁波市海曙区学院路788号</view>
+        </view>
+        <view class="distance">
+          距离
+          <view style="color: red;">16km</view>
+        </view>
+      </view>
+      <map id="store-detail-map" class="store-detail-map" id="store-detail"></map>
+      <button bindtap="gotoMenu" class="menu-btn">进入菜单</button>
+    </view>
+  </page-container>
 </view>

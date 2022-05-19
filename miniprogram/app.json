@@ -9,6 +9,9 @@
     "pages/product/detail",
     "pages/login/index"
   ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
   "tabBar": {
     "color": "#797979",
     "selectedColor": "#E60012",
@@ -41,6 +44,5 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }
