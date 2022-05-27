@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "门店列表"
+  "usingComponents": {
+    "sidebar": "../../components/sidebar"
+  },
+  "navigationStyle": "custom"
 }

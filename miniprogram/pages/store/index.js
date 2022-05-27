@@ -17,6 +17,11 @@ Page({
       currentStore:null
 
   },
+  gotoMenu() {
+    wx.navigateTo({
+      url: '/pages/menu/index',
+    })
+  },
   popupStoreDetail(e) {
     const {store} = e.currentTarget.dataset
     this.setData({

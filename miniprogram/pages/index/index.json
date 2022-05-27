@@ -1,7 +1,8 @@
 {
   "navigationStyle": "custom",
   "usingComponents": {
+    "force-swiper":"../../components/force-swiper",
     "progress-bar": "../../components/progress-bar"
   },
   "backgroundColor": "#f6f6f6"
-}  
+}

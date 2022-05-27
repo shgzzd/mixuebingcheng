@@ -66,6 +66,13 @@
           "name": "点餐",
           "pathName": "pages/store/index",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "点餐菜单",
+          "pathName": "pages/menu/index",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

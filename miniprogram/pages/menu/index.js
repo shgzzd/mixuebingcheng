@@ -5,14 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
+    headerStyle: '',
+  },
+  headerStyle(){
 
   },
-
+  makeHeaderStyle() {
+    const { top, bottom, height } = wx.getMenuButtonBoundingClientRect()
+    const menuButtonCenterPoint = top + height/2
+    const headerStyle = 'margin-top: calc(' + menuButtonCenterPoint + 'px - 32rpx);'
+    this.setData({
+      headerStyle
+    })
+  },
+  switchCurrentStore(){
+    wx.switchTab({
+      url: '/pages/store/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.makeHeaderStyle();
   },
 
   /**

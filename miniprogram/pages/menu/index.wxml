@@ -1,6 +1,37 @@
-<view class="container">
-      <view class="mai">234</view>
-      <view>234</view>
-      <view>234</view>
-
+<view class="header" style="{{ headerStyle }}">
+  <image class="back-icon" bindtap="switchCurrentStore" src="../../assets/icons/arrow-left.svg"></image>
+  <view class="search-input">
+    <image class="search-icon" src="../../assets/icons/search.svg"></image>
+    <input placeholder="请输入商品名" />
+  </view>
+</view>
+<view class="menu-info">
+  <view class="store-info">
+		<view class="store-name" bindtap="switchCurrentStore">
+			蜜雪冰城（财经学院店）
+			<image src="../../assets/icons/arrow-right.svg"></image>
+		</view>
+		<view class="store-location">
+			<image class="location-icon" src="../../assets/icons/location.svg"></image>
+			<view class="distance-info">
+				距离您 <view style="color: red; margin-left: 4rpx">{{ currentStore.distance }}km</view>
+			</view>
+		</view>
+  </view>
+  <view class="trade-type">自提</view>
+</view>
+<view class="menu">
+	<!-- 侧边栏 -->
+	<sidebar></sidebar>
+	<!-- 右边 -->
+	<view class="menu-list">
+		<!-- 轮播图 -->
+		<view class="swiper">
+			轮播图
+		</view>
+		<!-- list -->
+		<view class="list">
+			商品列表
+		</view>
+	</view>
 </view>
