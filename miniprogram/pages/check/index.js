@@ -1,4 +1,4 @@
-// pages/order/index.js
+// pages/check/index.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
 
   },
-  goMenu(){
-    wx.switchTab({
-      url: '/pages/store/index',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

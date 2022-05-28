@@ -1,3 +1,7 @@
+import swiperApi from '../../api/swiper'
+import goodsApi from '../../api/goods'
+import goodsCategoryApi from '../../api/goods_category'
+
 // pages/menu/index.js
 Page({
 
@@ -6,6 +10,8 @@ Page({
    */
   data: {
     headerStyle: '',
+    swiperList: [],
+    goodsList:[]
   },
   headerStyle(){
 
@@ -28,54 +34,24 @@ Page({
    */
   onLoad: function (options) {
     this.makeHeaderStyle();
+    this.fetchSwiperList();
+    this.feachData();
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  fetchSwiperList() {
+    swiperApi.list().then(res=>{
+      this.setData({
+        swiperList: res.data
+      })
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  feachData(){
+    goodsApi.list().then(res => {
+      this.setData({
+        goodsList: res.result
+      })
+    })
+    goodsCategoryApi.list().then(res => {
+      console.log(res);
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

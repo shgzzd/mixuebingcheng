@@ -73,6 +73,20 @@
           "name": "点餐菜单",
           "pathName": "pages/menu/index",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/check/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/index",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

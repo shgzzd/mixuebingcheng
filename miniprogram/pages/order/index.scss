@@ -1,0 +1,35 @@
+.van-tabs {
+  .van-tab {
+    justify-content: center;
+    align-items: center;
+
+    image {
+      margin-top: 200rpx;
+      margin-left: 100rpx;
+      display: flex;
+      width: 500rpx;
+      height: 500rpx;
+      flex-shrink: 0;
+    }
+
+    .text {
+      margin-left: 180rpx;
+      font-size: 22rpx;
+      color: #666;
+    }
+
+    .drink {
+      margin-left: 280rpx;
+      margin-top: 40rpx;
+      background-color: #e50211;
+      width: 220rpx;
+      height: 80rpx;
+      color: #fff;
+      border-radius: 10rpx;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+    }
+  }
+}

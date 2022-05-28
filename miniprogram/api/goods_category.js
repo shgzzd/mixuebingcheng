@@ -1,6 +1,6 @@
 const db = wx.cloud.database()
 const list = () => {
-  return db.collection('mx_swiper').get();
+  return db.collection('goods_category').get()
 }
 export default {
   list

@@ -1,0 +1,12 @@
+<!--pages/check/index.wxml-->
+<view class="info">
+  <view class="way">自提</view>
+  <view class="title">蜜雪冰城（财经学院店）</view>
+  <view class="location">高桥镇学院路788号</view>
+  <view class="time">自提时间</view>
+  <view class="state">立即取餐</view>
+  <view class="meter">626m</view>
+</view>
+<view class="info-middle">
+  
+</view>

@@ -6,7 +6,7 @@ Component({
   properties: {
     list: {
       type: Array,
-      value: [1,2,3]
+      value: [1,2,3,4,5,6]
     },
     defaultCurrent: {
       type: Number,

@@ -1,3 +1,4 @@
+<!-- 搜索框 -->
 <view class="header" style="{{ headerStyle }}">
   <image class="back-icon" bindtap="switchCurrentStore" src="../../assets/icons/arrow-left.svg"></image>
   <view class="search-input">
@@ -22,16 +23,56 @@
 </view>
 <view class="menu">
 	<!-- 侧边栏 -->
-	<sidebar></sidebar>
+	<sidebar ></sidebar>
 	<!-- 右边 -->
-	<view class="menu-list">
+	<scroll-view class="menu-list" scroll-y show-scrollbar="{{ false }}" enhanced>
 		<!-- 轮播图 -->
-		<view class="swiper">
-			轮播图
-		</view>
+		<force-swiper list="{{ swiperList }}"></force-swiper>
 		<!-- list -->
 		<view class="list">
-			商品列表
+			<view class="section">
+				<view class="section-header">双炫冰淇淋</view>
+				<view class="section-list">
+					<view class="item">
+						<image src="../../assets/images/product-image.png"></image>
+						<view class="info">
+							<view class="name">摩卡摇摇奶昔</view>
+							<view class="description">咖啡遇到冰淇淋</view>
+							<view class="price">$6</view>
+						</view>
+						<view class="add-icon">
+							<image src="../../assets/icons/plus.svg"></image>
+						</view>
+					</view>
+				</view>
+				<view class="section-list">
+					<view class="item">
+						<image src="../../assets/images/product-image.png"></image>
+						<view class="info">
+							<view class="name">摩卡摇摇奶昔</view>
+							<view class="description">咖啡遇到冰淇淋</view>
+							<view class="price">$6</view>
+						</view>
+						<view class="add-icon">
+							<image src="../../assets/icons/plus.svg"></image>
+					 	</view>
+					</view>
+				</view>
+				<view class="section-list">
+					<view class="item">
+						<image src="../../assets/images/product-image.png"></image>
+						<view class="info">
+							<view class="name">摩卡摇摇奶昔</view>
+							<view class="description">咖啡遇到冰淇淋</view>
+							<view class="price">$6</view>
+						</view>
+						<view class="add-icon">
+							<image src="../../assets/icons/plus.svg"></image>
+						</view>
+					</view>
+				</view>
+			</view>
 		</view>
-	</view>
+	</scroll-view>
 </view>
+<cart-bar></cart-bar>

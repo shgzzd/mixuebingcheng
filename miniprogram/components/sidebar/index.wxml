@@ -1,5 +1,5 @@
-<!-- components/sidebar/index.wxml
-<scroll-view  class="sidebar" scroll-y show-scrollbar="{{ false }}" enhanced>
+<!-- components/sidebar/index.wxml -->
+<!-- <scroll-view  class="sidebar" scroll-y show-scrollbar="{{ false }}" enhanced>
   <view wx:for="{{ list }}" wx:key="index" class="sidebar-item{{ index === current ? 'active': '' }} ">
     <image class="item-image" src="../../assets/images/menu-icon.png"></image>
     <view class="item-label">双炫冰淇淋</view>

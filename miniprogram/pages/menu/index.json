@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "sidebar": "../../components/sidebar"
+    "sidebar": "../../components/sidebar",
+    "force-swiper":"../../components/force-swiper",
+    "cart-bar":"../../components/cart-bar"
   },
   "navigationStyle": "custom"
 }

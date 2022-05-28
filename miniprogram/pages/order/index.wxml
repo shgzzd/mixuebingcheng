@@ -1,2 +1,17 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<van-tabs class= "van-tabs" active="a">
+  <van-tab class="van-tab" title="进行中" name="a">
+    <image mode="aspectFill"  src="../../assets/images/no_coupon.png"></image>
+    <view class="text">您还没有订单，快去选一杯喜欢的饮品吧</view>
+    <view bindtap="goMenu" class="drink">去喝一杯</view>
+  </van-tab>
+  <van-tab class="van-tab" title="历史" name="b">
+    <image mode="aspectFill"  src="../../assets/images/no_coupon.png"></image>
+    <view class="text">您还没有订单，快去选一杯喜欢的饮品吧</view>
+    <view bindtap="goMenu" class="drink">去喝一杯</view>
+  </van-tab>
+  <van-tab class="van-tab" title="退单" name="c">
+    <image mode="aspectFill"  src="../../assets/images/no_coupon.png"></image>
+    <view class="text">您还没有订单，快去选一杯喜欢的饮品吧</view>
+    <view bindtap="goMenu" class="drink">去喝一杯</view>
+  </van-tab>
+</van-tabs>
