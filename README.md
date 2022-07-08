@@ -80,11 +80,7 @@
 进入点餐页面，出现地图组件查看门店地址，切换可查看常用门店，点击专属门店可以弹出提示框进入门店，进入门店后可以进行商品的筛选和点餐 
 
 
-
- ![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)     ![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png) 
-
- ![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png)        ![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png) 
-
+![输入图片说明](img/image.png)![输入图片说明](img/23.png)
 ## 3.3      订单界面
 
 
