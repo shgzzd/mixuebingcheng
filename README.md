@@ -21,7 +21,7 @@
 # 2. 系统设计
 
 ## 2.1                     
-![输入图片说明](imgimage.png)
+![输入图片说明](img/image1.png)
 
 次小程序包括四个菜单栏，分别是首页、点餐、订单和我的。首页设计为轮播图、授权登录和进入点餐。点餐设计为地图、门店搜索和门店列表，点击某一门店可以查看当前店铺菜单详情。订单设计为进行中订单、历史订单和退单。
 
@@ -93,12 +93,8 @@
 我的界面包含个人基本信息，优惠券，兑换码，亦可进行授权登录。
 
 
-
-
-
-![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png)![img](/C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image025.png)
-
-
+![输入图片说明](img/image5.png)
+![输入图片说明](img/image6.png)
 
  
 
